@@ -1,51 +1,70 @@
+
+
+:root{
+  /* colors */
+    --orange:#ff7800;
+    --complementary-color:blue;
+    --black:#130f40;
+    --light-grey-color:#666;
+    --white:#fff;
+    --body-background-color:#eee;
+    --light-color-two:#ddd;
+    /* line height */
+    --line-height-md:1.8;
+    /* border redius */
+    --border-redius-regular: 0.5rem;
+    /* margin */
+    --margin-2rem:2rem;
+    /* border */
+    --border-regular:1px solid black;
+    /* other */
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+* {
+  font-size: 62.5%;
+}
+
 .App {
-  text-align: center;
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  background: var(--body-background-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section{
+  padding:2rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* button */
+
+.primary-button{
+  margin-top: 1rem;
+  display: inline-block;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: var(--border-redius-regular);
+  border:.2rem solid var(--black);
+  color:var(--black);
+  cursor: pointer;
+  background: none;
 }
 
-.App-header {
-  background-color: #22201c;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.primary-button:hover{
+  background: var(--orange);
+  color:var(--white);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-.brand-title {
-  font-size: 3rem;
-  color: #d9d9d9;
-}
-
-.brand-title span {
-  color: #ffde59;
-}
-
-.brand-description {
-  font-size: 1.4rem;
-}
-
-.links {
-  display: flex;
-}
-
-.links a {
-  color: #d9d9d9;
-  font-size: 1.2rem;
-  margin: 1rem;
-}
