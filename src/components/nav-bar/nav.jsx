@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import './nav.css'
+import { Link } from "react-router-dom";
 
 function Nav() {
 
@@ -29,11 +30,12 @@ function Nav() {
 <header className="comp-header">
         <a href="#" className="nav-logo"> <i className="fas fa-shopping-basket" /> Sarathi Grocery</a>
         <navbar className="navbar-comp">
-          <a href="./index.html">home</a>
+          <Link to="/">home</Link>
           <a href="#features">features</a>
           <a href="./product.html">products</a>
-          <a href="./about.html">about</a>
-          <a href="./review.html">review</a>
+          <Link to="/about">about</Link>
+          <Link to= '/review'>review</Link>
+          {/* <a href="./review.html">review</a> */}
         </navbar>
         <div className="nav-icons">
           <div className="fas fa-bars" id="menu-btn" />

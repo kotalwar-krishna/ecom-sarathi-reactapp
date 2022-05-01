@@ -1,6 +1,6 @@
 import React from 'react'
 import "./footer.css";
-
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -25,11 +25,11 @@ function Footer() {
           </div>
           <div className="box">
             <h3>quick links</h3>
-            <a href="./index.html" className="links"> <i className="fas fa-arrow-right" /> home </a>
+            <Link to="/" className="links"> <i className="fas fa-arrow-right" /> home </Link>
             <a href="./index.html" className="links"> <i className="fas fa-arrow-right" /> features </a>
             <a href="./product.html" className="links"> <i className="fas fa-arrow-right" /> products </a>
-            <a href="./about.html" className="links"> <i className="fas fa-arrow-right" /> about </a>
-            <a href="./review.html" className="links"> <i className="fas fa-arrow-right" /> review </a>
+            <Link to="/about" className="links"> <i className="fas fa-arrow-right" /> about </Link>
+            <Link to="/review" className="links"> <i className="fas fa-arrow-right" /> review </Link>
           </div>
           <div className="box">
             <h3>news-letter</h3>

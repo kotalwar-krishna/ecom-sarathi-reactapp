@@ -1,0 +1,40 @@
+.whishlist-banner-heading{
+    background:url(../../images/heading-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+.whishlist-banner-heading h1{
+    color:var(--black);
+    font-size: 4rem;
+}
+
+.whishlist-banner-heading h1 span{
+    color: var(--orange);
+    font-size: 4rem;
+}
+
+
+.review {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin: 4rem;
+    font-size: 1rem;
+}
+
+.review .feature-card{
+    margin: 2rem;
+}
+
+.review .feature-card h3{
+    font-size: 1.4rem;
+}
+
+.btn {
+
+    font-size: 1rem;
+}
